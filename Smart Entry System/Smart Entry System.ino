@@ -1,7 +1,7 @@
 //These are required for Blynk IoT cloud to link your code with the device you created online
-#define BLYNK_TEMPLATE_ID "TMPL6BJ-sUWUH"
+#define BLYNK_TEMPLATE_ID "TMxxxxxxx"
 #define BLYNK_TEMPLATE_NAME "IOT RFID Door Lock"
-#define BLYNK_AUTH_TOKEN "t0Y7OVJuYyicGCUR9CsflUyK1mIwtV0R"
+#define BLYNK_AUTH_TOKEN "t0ixxxxxxxxxxxtV0R"
 
 #include <SPI.h>
 #include <MFRC522.h>
@@ -17,20 +17,11 @@
 #include "camera_pins.h"
 
 
-
-// const char* ssid = "A T patel";
-// const char* pass = "Tirth9192";
-// const char* ssid = "Wi5G";
-// const char* pass = "Qwerty@5";
-// const char* ssid = "Telstra19FF";
-// const char* pass = "9982236059";
 const char* ssid = "Sandeep";
 const char* pass = "sandeep098";
 
 
-const char* firebaseHostRDB = "https://iot-rfid-door-lock-default-rtdb.asia-southeast1.firebasedatabase.app/";
-// const char* firebaseHostStorage = "firebasestorage.googleapis.com";
-// const char* firebaseBucket = "iot-rfid-door-lock.firebasestorage.app";
+const char* firebaseHostRDB = "https://iot-rfid-door-lock-default-rtdb.xxxx";
 
 // --- Blynk Virtual Pin Assignments ---
 
@@ -100,8 +91,8 @@ std::map<String, UserInfo> rfidUsers;  // UID → UserInfo
 
 class CameraUploader {
   private:
-    const char* firebaseHost = "firebasestorage.googleapis.com";
-    const char* firebaseBucket = "iot-rfid-door-lock.firebasestorage.app";
+    const char* firebaseHost = "xxxxxxx";
+    const char* firebaseBucket = "xxxxxxxx";
     camera_fb_t* fb;
 
   public:
